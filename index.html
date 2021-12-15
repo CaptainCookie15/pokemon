@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+    
+  <div id="Page1">
+    <h1 style="red">Choose Your Pokémon</h1>
+<script src="script.js"></script>
+<button type="button" onclick="charizard()">Charizard</button>
+<button type="button" onclick="blastoise()">Blastoise</button>
+    <a href="#" style="color:green" onclick="return show('Page2','Page1');">Begin Round</a>
+  </div>
+    
+  <div id="Page2" style="display:none">
+    <style>
+body {
+  background-image: url('https://cutewallpaper.org/21/pokemon-stadium-wallpaper/Stadium-Backgrounds-Wallpaper-Cave.jpg');
+}
+</style>
+<h1 style="color:red"><center>Pokémon Leauge</center></h1>
+<center><h3 id="text" style="color:green">ROUND 1</h3></center>
+
+<div align = "left" style="color:red" id="health1">100</div>
+<div align = "right" style="color:red" id="health2">100</div>
+<img align="left" id="pokemon" src="https://www.kindpng.com/picc/m/79-792390_transparent-charizard-pokemon-charizard-png-png-download.png" alt="Charizard" width="200" height="200">
+<img align="right" src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc2Mjk3OTE5MTkwNjcyNTc0/pokemon-blastoise-nicknames.jpg" alt="Charizard" width="200" height="200">
+<button type="button" onclick="one()" id="one">Flame Thrower</button>
+<div></div>
+<button type="button" onclick="two()" id="two">Slash</button>
+    <a href="#" style="color:green" onclick="return show('Page1','Page2');">Next Round</a>
+  </div>
+    
+</body>
+</html>
